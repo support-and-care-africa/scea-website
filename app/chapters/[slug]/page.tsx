@@ -154,43 +154,48 @@ export default function ChapterDetail({ params }: { params: { slug: ChapterKey }
           <div className="absolute inset-0 -z-10 bg-gradient-to-br from-secondary via-secondary/90 to-background" />
           <div className="absolute inset-0 -z-10 opacity-30 mix-blend-overlay" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"420\" height=\"420\" viewBox=\"0 0 420 420\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 420L420 0\" stroke=\"rgba(255,255,255,0.06)\"/%3E%3C/svg%3E')" }} />
           <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 pb-24 pt-20 text-secondary-foreground lg:px-8 lg:pb-32">
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.35em] text-primary">
+            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/50 bg-transparent px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
               {chapter.country}
-            </div>
+          </div>
             <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr] lg:items-end">
-              <div className="space-y-6">
-                <h1 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-6xl">
+              <div className="space-y-6 text-foreground dark:text-white">
+                <h1 className="text-balance text-4xl font-semibold leading-tight text-foreground dark:text-white sm:text-5xl md:text-6xl">
                   {chapter.name}
                 </h1>
-                <p className="max-w-2xl text-pretty text-base text-white/70 sm:text-lg">{chapter.tagline}</p>
-                <div className="flex flex-wrap gap-3 text-xs uppercase tracking-[0.3em] text-white/60">
+                <p className="max-w-2xl text-pretty text-base text-muted-foreground dark:text-white/70 sm:text-lg">
+                  {chapter.tagline}
+                </p>
+                <div className="flex flex-wrap gap-3 text-xs uppercase tracking-[0.3em] text-muted-foreground dark:text-white/60">
                   {chapter.focus.map((focus) => (
-                    <span key={focus} className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1">
+                    <span
+                      key={focus}
+                      className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-transparent px-3 py-1 text-primary dark:border-primary/30 dark:bg-primary/10 dark:text-primary-foreground"
+                    >
                       <Sparkle size={14} />
                       {focus}
                     </span>
                   ))}
                 </div>
               </div>
-              <div className="rounded-3xl border border-white/10 bg-white/10 p-6 text-sm text-white/70 backdrop-blur-3xl">
-                <div className="flex items-center justify-between text-xs uppercase tracking-[0.35em] text-white/60">
+              <div className="rounded-3xl border border-border/60 bg-surface-strong p-6 text-sm text-muted-foreground backdrop-blur-3xl dark:border-white/10 dark:bg-white/10 dark:text-white/70">
+                <div className="flex items-center justify-between text-xs uppercase tracking-[0.35em] text-muted-foreground dark:text-white/60">
                   <span>Established</span>
                   <span>{chapter.established}</span>
                 </div>
-                <div className="mt-4 grid gap-3 text-xs uppercase tracking-[0.3em] text-white/60">
-                  <div className="rounded-2xl border border-white/10 bg-white/10 p-4">
-                    <div className="flex items-center gap-2 text-sm text-white">
+                <div className="mt-4 grid gap-3 text-xs uppercase tracking-[0.3em] text-muted-foreground dark:text-white/60">
+                  <div className="rounded-2xl border border-border/60 bg-surface p-4 text-foreground dark:border-white/10 dark:bg-white/10 dark:text-white">
+                    <div className="flex items-center gap-2 text-sm">
                       <Users size={16} />
                       {chapter.members}
                     </div>
-                    <p className="mt-2 text-xs text-white/70">{chapter.meetups}</p>
+                    <p className="mt-2 text-xs text-muted-foreground dark:text-white/70">{chapter.meetups}</p>
                   </div>
-                  <div className="rounded-2xl border border-white/10 bg-white/10 p-4">
-                    <div className="flex items-center gap-2 text-sm text-white">
+                  <div className="rounded-2xl border border-border/60 bg-surface p-4 text-foreground dark:border-white/10 dark:bg-white/10 dark:text-white">
+                    <div className="flex items-center gap-2 text-sm">
                       <MapPin size={16} />
                       {chapter.location}
                     </div>
-                    <p className="mt-2 text-xs text-white/70">Pods: {chapter.pods.join(" • ")}</p>
+                    <p className="mt-2 text-xs text-muted-foreground dark:text-white/70">Pods: {chapter.pods.join(" • ")}</p>
                   </div>
                 </div>
               </div>
@@ -255,16 +260,16 @@ export default function ChapterDetail({ params }: { params: { slug: ChapterKey }
         <section className="mx-auto w-full max-w-6xl px-4 lg:px-8">
           <div className="rounded-3xl border border-border/60 bg-surface p-10 shadow-[0_35px_80px_-40px_rgba(7,8,45,0.55)] backdrop-blur-xl">
             <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary">
+                    <div>
+                <span className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-transparent px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/30 dark:bg-primary/10 dark:text-primary-foreground">
                   Upcoming Rhythms
                 </span>
                 <h2 className="mt-4 text-3xl font-semibold text-foreground sm:text-4xl">What&apos;s next for {chapter.name}</h2>
                 <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
                   Events and rituals designed with rest, play, and impact in mind. Reach out if you&apos;d like to
                   collaborate or bring this programming to your city.
-                </p>
-              </div>
+                      </p>
+                    </div>
             </div>
 
             <div className="mt-10 grid gap-6 sm:grid-cols-3">
@@ -289,11 +294,13 @@ export default function ChapterDetail({ params }: { params: { slug: ChapterKey }
           <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-secondary/40 to-secondary" />
           <div className="absolute inset-x-0 top-0 -z-10 h-48 bg-[radial-gradient(circle_at_top,rgba(93,186,159,0.35),transparent_65%)]" />
           <div className="mx-auto w-full max-w-4xl px-4 py-24 text-center text-secondary-foreground lg:px-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary">
+            <div className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-transparent px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/30 dark:bg-primary/10 dark:text-primary-foreground">
               Join the chapter
             </div>
-            <h2 className="mt-6 text-3xl font-semibold text-white sm:text-4xl">Ready to co-create with {chapter.name}?</h2>
-            <p className="mt-4 text-base text-white/70 sm:text-lg">
+            <h2 className="mt-6 text-3xl font-semibold text-foreground dark:text-white sm:text-4xl">
+              Ready to co-create with {chapter.name}?
+            </h2>
+            <p className="mt-4 text-base text-muted-foreground dark:text-white/70 sm:text-lg">
               Tell us how you want to plug in—whether you&apos;re mentoring, building, or offering partner support.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
@@ -306,7 +313,7 @@ export default function ChapterDetail({ params }: { params: { slug: ChapterKey }
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-smooth hover:border-white hover:bg-white/10"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-border/60 px-6 py-3 text-sm font-semibold text-foreground transition-smooth hover:border-primary/40 hover:bg-primary/10 dark:border-white/40 dark:text-white dark:hover:border-white dark:hover:bg-white/10"
               >
                 Talk with a steward
                 <HeartPulse size={16} />

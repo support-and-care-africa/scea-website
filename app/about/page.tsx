@@ -72,48 +72,48 @@ export default function About() {
           <div className="absolute inset-0 -z-10 bg-gradient-to-br from-secondary via-secondary/90 to-background" />
           <div className="absolute inset-0 -z-10 opacity-30 mix-blend-overlay" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"420\" height=\"420\" viewBox=\"0 0 420 420\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 420L420 0\" stroke=\"rgba(255,255,255,0.06)\"/%3E%3C/svg%3E')" }} />
           <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 pb-24 pt-20 text-secondary-foreground lg:px-8 lg:pb-32">
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.35em] text-primary">
+            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.35em] text-primary dark:text-primary-foreground">
               About Support & Care
           </div>
             <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-start">
-              <div className="space-y-6">
-                <h1 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-6xl">
+              <div className="space-y-6 text-foreground dark:text-white">
+                <h1 className="text-balance text-4xl font-semibold leading-tight text-foreground dark:text-white sm:text-5xl md:text-6xl">
                   Designing infrastructures of care for East Africa&apos;s open source movement.
                 </h1>
-                <p className="max-w-2xl text-pretty text-base text-white/70 sm:text-lg">
+                <p className="max-w-2xl text-pretty text-base text-muted-foreground dark:text-white/70 sm:text-lg">
                   We exist so contributors can create without sacrificing their wellbeing. Our programs bridge funding,
                   mentorship, mental health, and governance support—helping maintainers steward communities with
                   longevity.
                 </p>
-                <div className="flex flex-wrap gap-3 text-xs uppercase tracking-[0.3em] text-white/60">
-                  <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1">
+                <div className="flex flex-wrap gap-3 text-xs uppercase tracking-[0.3em] text-muted-foreground dark:text-white/60">
+                  <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 dark:bg-white/10">
                     <Sparkle size={14} /> Mentorship Pods
                   </span>
-                  <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1">
+                  <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 dark:bg-white/10">
                     Collective Care Funds
                   </span>
-                  <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1">
+                  <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 dark:bg-white/10">
                     Contributor Residencies
                   </span>
                 </div>
               </div>
 
-              <div className="relative rounded-3xl border border-white/10 bg-white/10 p-8 text-white/70 backdrop-blur-3xl">
+              <div className="relative rounded-3xl border border-border/60 bg-surface-strong p-8 text-muted-foreground backdrop-blur-3xl dark:border-white/10 dark:bg-white/10 dark:text-white/70">
                 <p className="text-sm">
                   We are a community response to the silent attrition of open source maintainers across East Africa.
                   Support & Care convenes organizers, healers, and technologists to craft a new standard for sustained
                   collaboration—one anchored in dignity, shared resources, and joyful making.
                 </p>
-                <div className="mt-8 grid gap-4 text-xs uppercase tracking-[0.3em]">
-                  <div className="flex justify-between text-white/60">
+                <div className="mt-8 grid gap-4 text-xs uppercase tracking-[0.3em] text-muted-foreground dark:text-white/60">
+                  <div className="flex justify-between">
                     <span>Founded</span>
                     <span>2021</span>
                   </div>
-                  <div className="flex justify-between text-white/60">
+                  <div className="flex justify-between">
                     <span>Chapters</span>
                     <span>5 Cities</span>
                   </div>
-                  <div className="flex justify-between text-white/60">
+                  <div className="flex justify-between">
                     <span>Contributors</span>
                     <span>1,800+</span>
                   </div>
@@ -160,7 +160,7 @@ export default function About() {
           <div className="rounded-3xl border border-border/60 bg-surface p-10 shadow-[0_35px_80px_-40px_rgba(7,8,45,0.55)] backdrop-blur-xl">
             <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary">
+                <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
                   Challenges We Address
                 </div>
                 <h2 className="mt-4 text-3xl font-semibold text-foreground sm:text-4xl">
@@ -184,8 +184,8 @@ export default function About() {
                     <h3 className="text-lg font-semibold text-foreground">{challenge.title}</h3>
                     <p className="text-sm text-muted-foreground">{challenge.description}</p>
                   </div>
-                </div>
-              ))}
+                  </div>
+                ))}
             </div>
           </div>
         </section>
@@ -193,7 +193,7 @@ export default function About() {
         <section className="mx-auto w-full max-w-6xl px-4 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-[1fr_1.4fr]">
             <div className="rounded-3xl border border-border/60 bg-surface p-8 shadow-[0_35px_80px_-40px_rgba(7,8,45,0.55)] backdrop-blur-xl">
-              <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary">
+              <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
                 People
               </div>
               <h2 className="mt-4 text-3xl font-semibold text-foreground sm:text-4xl">Leadership collective</h2>
@@ -222,13 +222,13 @@ export default function About() {
           <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 py-20 text-secondary-foreground lg:px-8">
             <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary">
+                <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
                   Partners in care
                 </div>
-                <h2 className="mt-4 text-3xl font-semibold text-white sm:text-4xl">
+                <h2 className="mt-4 text-3xl font-semibold text-foreground dark:text-white sm:text-4xl">
                   A constellation of allied organizations.
                 </h2>
-                <p className="mt-3 max-w-2xl text-sm text-white/70">
+                <p className="mt-3 max-w-2xl text-sm text-muted-foreground dark:text-white/70">
                   We collaborate with coalitions and institutions willing to invest in long-term, care-centered open
                   source ecosystems.
                 </p>
@@ -237,7 +237,10 @@ export default function About() {
 
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {partners.map((partner) => (
-                <div key={partner} className="rounded-3xl border border-white/20 bg-white/10 p-6 text-sm text-white/80 backdrop-blur-xl transition-smooth hover:-translate-y-1 hover:border-white/40">
+                <div
+                  key={partner}
+                  className="rounded-3xl border border-border/60 bg-surface p-6 text-sm text-muted-foreground backdrop-blur-xl transition-smooth hover:-translate-y-1 hover:border-primary/40 dark:border-white/20 dark:bg-white/10 dark:text-white/80 dark:hover:border-white/40"
+                >
                   {partner}
                 </div>
               ))}

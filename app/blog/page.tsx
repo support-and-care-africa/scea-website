@@ -92,21 +92,21 @@ export default function Blog() {
           <div className="absolute inset-0 -z-10 bg-gradient-to-br from-secondary via-secondary/90 to-background" />
           <div className="absolute inset-0 -z-10 opacity-30 mix-blend-overlay" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"420\" height=\"420\" viewBox=\"0 0 420 420\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 420L420 0\" stroke=\"rgba(255,255,255,0.06)\"/%3E%3C/svg%3E')" }} />
           <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 pb-24 pt-20 text-secondary-foreground lg:px-8 lg:pb-32">
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.35em] text-primary">
+            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
               Stories & Signals
             </div>
             <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-end">
               <div className="space-y-6">
-                <h1 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-6xl">
+                <h1 className="text-balance text-4xl font-semibold leading-tight text-foreground dark:text-white sm:text-5xl md:text-6xl">
                   Dispatches from East Africa&apos;s open source stewards.
                 </h1>
-                <p className="max-w-2xl text-pretty text-base text-white/70 sm:text-lg">
+                <p className="max-w-2xl text-pretty text-base text-muted-foreground dark:text-white/70 sm:text-lg">
                   Read reflections, playbooks, and field notes from our chapters, fellows, and partners. Every story is a
                   glimpse into how care-led open source shows up across the region.
                 </p>
               </div>
-              <div className="rounded-3xl border border-white/10 bg-white/10 p-6 text-white/70 backdrop-blur-3xl">
-                <span className="text-xs uppercase tracking-[0.3em] text-white/60">Featured theme</span>
+              <div className="rounded-3xl border border-border/60 bg-surface-strong p-6 text-muted-foreground backdrop-blur-3xl dark:border-white/10 dark:bg-white/10 dark:text-white/70">
+                <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground dark:text-white/60">Featured theme</span>
                 <p className="mt-3 text-sm">
                   Sustainability, care, and community infrastructure highlight this month&apos;s programs across Nairobi,
                   Kampala, and Kigali.
@@ -126,15 +126,15 @@ export default function Blog() {
           <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
             <Link
               href={`/blog/${featured.slug}`}
-              className="group relative overflow-hidden rounded-3xl border border-border/60 bg-surface p-10 shadow-[0_35px_80px_-40px_rgba(7,8,45,0.55)] backdrop-blur-xl transition-smooth hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_50px_90px_-35px_rgba(7,8,45,0.6)]"
+                  className="group relative overflow-hidden rounded-3xl border border-border/60 bg-surface p-10 text-foreground shadow-[0_35px_80px_-40px_rgba(7,8,45,0.55)] backdrop-blur-xl transition-smooth hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_50px_90px_-35px_rgba(7,8,45,0.6)] dark:text-white"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-accent/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               <div className="relative flex h-full flex-col gap-6">
                 <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.3em] text-primary">
-                  <span className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-[11px] font-semibold">
+                  <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
                     {featured.category}
                   </span>
-                  <span className="inline-flex items-center gap-2 text-white/60">
+                  <span className="inline-flex items-center gap-2 text-muted-foreground dark:text-white/60">
                     <Calendar size={14} />
                     {new Date(featured.date).toLocaleDateString()}
                   </span>
@@ -180,8 +180,8 @@ export default function Blog() {
 
         <section className="mx-auto w-full max-w-6xl px-4 lg:px-8">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary">
+              <div>
+                <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
                 Field Notes
               </div>
               <h2 className="mt-4 text-3xl font-semibold text-foreground sm:text-4xl">Latest stories</h2>
@@ -201,7 +201,7 @@ export default function Blog() {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-accent/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                 <div className="relative flex h-full flex-col gap-5">
                   <div className="flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-primary/80">
-                    <span className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-[10px] font-semibold">
+                    <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[10px] font-semibold text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
                       {post.category}
                     </span>
                     <span className="inline-flex items-center gap-2 text-muted-foreground">
@@ -228,7 +228,7 @@ export default function Blog() {
 
         <section className="mx-auto w-full max-w-5xl px-4 lg:px-8">
           <div className="rounded-3xl border border-border/60 bg-surface p-10 text-center shadow-[0_35px_80px_-40px_rgba(7,8,45,0.55)] backdrop-blur-xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary">
+            <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
               Newsletter
             </div>
             <h2 className="mt-6 text-3xl font-semibold text-foreground sm:text-4xl">Stay close to the movement.</h2>

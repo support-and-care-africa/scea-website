@@ -27,18 +27,18 @@ const contactChannels: Array<{ href: string; label: string; icon: LucideIcon }> 
 
 export function Footer() {
   return (
-    <footer className="relative mt-24 overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-primary/5 to-secondary/80" />
-      <div className="absolute inset-0 -z-10 opacity-60" style={{ backgroundImage: "radial-gradient(circle at 20% 20%, rgba(157,213,253,0.18), transparent 45%), radial-gradient(circle at 80% 0%, rgba(93,186,159,0.1), transparent 55%)" }} />
-      <div className="border-y border-border/60 bg-secondary/50 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-6xl flex-col gap-16 px-4 py-16 text-secondary-foreground lg:px-8">
-          <div className="rounded-3xl border border-border/60 bg-background/95 p-8 shadow-2xl backdrop-blur-xl sm:p-12">
+    <footer className="relative mt-24 overflow-hidden bg-background text-foreground dark:bg-secondary dark:text-secondary-foreground">
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-primary/10 to-secondary/70 dark:via-primary/5 dark:to-secondary/80" />
+      <div className="absolute inset-0 -z-10 opacity-40 dark:opacity-60" style={{ backgroundImage: "radial-gradient(circle at 20% 20%, rgba(157,213,253,0.22), transparent 45%), radial-gradient(circle at 80% 0%, rgba(93,186,159,0.12), transparent 55%)" }} />
+      <div className="border-y border-border/40 bg-white/70 backdrop-blur-xl dark:border-border/60 dark:bg-secondary/50">
+        <div className="mx-auto flex max-w-6xl flex-col gap-16 px-4 py-16 lg:px-8">
+          <div className="rounded-3xl border border-border/40 bg-surface-strong p-8 text-foreground shadow-soft backdrop-blur-xl dark:border-border/60 dark:bg-background/95 dark:text-secondary-foreground sm:p-12">
             <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
               <div className="max-w-xl space-y-3">
-                <span className="inline-flex items-center rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary">
+                <span className="inline-flex items-center rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:text-primary-foreground">
                   Stay in the Loop
                 </span>
-                <h2 className="text-2xl font-semibold text-foreground md:text-3xl">
+                <h2 className="text-2xl font-semibold md:text-3xl">
                   Receive monthly insights from East Africa&apos;s open source champions.
                 </h2>
                 <p className="text-sm text-muted-foreground">
@@ -49,11 +49,11 @@ export function Footer() {
                 <input
                   type="email"
                   placeholder="you@email.com"
-                  className="h-12 w-full rounded-2xl border border-border/60 bg-background/80 px-4 text-sm text-foreground shadow-inner focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/40 sm:w-72"
+                className="h-12 w-full rounded-2xl border border-border/40 bg-background/90 px-4 text-sm text-foreground shadow-inner focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/40 dark:border-border/60 dark:bg-background/80 sm:w-72"
                 />
                 <button
                   type="submit"
-                  className="inline-flex h-12 items-center justify-center rounded-2xl bg-gradient-to-r from-primary via-primary/90 to-accent px-6 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-smooth hover:shadow-primary/40"
+                className="inline-flex h-12 items-center justify-center rounded-2xl bg-gradient-to-r from-primary via-primary/90 to-accent px-6 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-smooth hover:shadow-primary/40"
                 >
                   Subscribe
                 </button>
@@ -61,8 +61,8 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-            <div className="space-y-4">
+          <div className="grid gap-12 text-muted-foreground md:grid-cols-2 lg:grid-cols-4">
+            <div className="space-y-4 text-foreground">
               <Link href="/" className="flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/25 via-primary/30 to-accent/25">
                   <Image src="/logo.png" alt="Support & Care For East Africa" width={28} height={28} className="h-7 w-7" />
@@ -121,7 +121,7 @@ export function Footer() {
                   <a
                     key={href}
                     href={href}
-                    className="group flex items-center gap-2 rounded-2xl border border-border/50 bg-background/70 px-3 py-2 text-sm text-muted-foreground transition-smooth hover:border-primary/40 hover:text-foreground"
+                    className="group flex items-center gap-2 rounded-2xl border border-border/40 bg-background/80 px-3 py-2 text-sm text-muted-foreground transition-smooth hover:border-primary/40 hover:text-foreground dark:border-border/50 dark:bg-background/70"
                   >
                     <Icon size={16} className="text-primary transition-smooth group-hover:scale-110" />
                     {label}
@@ -135,7 +135,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-6 text-xs text-muted-foreground sm:flex-row">
+          <div className="flex flex-col items-center justify-between gap-4 border-t border-border/40 pt-6 text-xs text-muted-foreground sm:flex-row dark:border-border/50">
             <p>&copy; {new Date().getFullYear()} Support & Care For East Africa. All rights reserved.</p>
             <div className="flex gap-4">
               <Link href="/privacy" className="hover:text-foreground transition-smooth">

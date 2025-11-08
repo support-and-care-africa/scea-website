@@ -77,21 +77,21 @@ export default function Chapters() {
           <div className="absolute inset-0 -z-10 bg-gradient-to-br from-secondary via-secondary/90 to-background" />
           <div className="absolute inset-0 -z-10 opacity-30 mix-blend-overlay" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"420\" height=\"420\" viewBox=\"0 0 420 420\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 0L420 420\" stroke=\"rgba(255,255,255,0.06)\"/%3E%3C/svg%3E')" }} />
           <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 pb-24 pt-20 text-secondary-foreground lg:px-8 lg:pb-32">
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.35em] text-primary">
+            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
               Chapter Ecosystem
             </div>
             <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr] lg:items-end">
-              <div className="space-y-6">
-                <h1 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-6xl">
+              <div className="space-y-6 text-foreground dark:text-white">
+                <h1 className="text-balance text-4xl font-semibold leading-tight text-foreground dark:text-white sm:text-5xl md:text-6xl">
                   From Nairobi to Addis Ababa, we are stitching together care-first contributor networks.
                 </h1>
-                <p className="max-w-2xl text-pretty text-base text-white/70 sm:text-lg">
+                <p className="max-w-2xl text-pretty text-base text-muted-foreground dark:text-white/70 sm:text-lg">
                   Each chapter is a living lab grounded in local context. Together we share governance, tooling, and
                   wellbeing practices to nurture East Africa&apos;s open source stewards.
                 </p>
               </div>
-              <div className="rounded-3xl border border-white/10 bg-white/10 p-6 text-white/70 backdrop-blur-3xl">
-                <div className="flex items-center gap-3 text-xs uppercase tracking-[0.35em] text-white/60">
+              <div className="rounded-3xl border border-border/60 bg-surface-strong p-6 text-muted-foreground backdrop-blur-3xl dark:border-white/10 dark:bg-white/10 dark:text-white/70">
+                <div className="flex items-center gap-3 text-xs uppercase tracking-[0.35em] text-muted-foreground dark:text-white/60">
                   <MapPin size={14} />
                   5 cities · 18 pods · 37 projects in motion
                 </div>
@@ -113,16 +113,16 @@ export default function Chapters() {
 
         <section className="mx-auto w-full max-w-6xl px-4 lg:px-8">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {chapters.map((chapter) => (
+              {chapters.map((chapter) => (
               <Link
                 key={chapter.slug}
                 href={`/chapters/${chapter.slug}`}
-                className="group relative overflow-hidden rounded-3xl border border-border/60 bg-surface p-8 shadow-[0_25px_60px_-30px_rgba(7,8,45,0.45)] backdrop-blur-xl transition-smooth hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_40px_70px_-30px_rgba(7,8,45,0.55)]"
+                className="group relative overflow-hidden rounded-3xl border border-border/60 bg-surface p-8 text-foreground shadow-[0_25px_60px_-30px_rgba(7,8,45,0.45)] backdrop-blur-xl transition-smooth hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_40px_70px_-30px_rgba(7,8,45,0.55)] dark:text-white"
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${chapter.gradient} opacity-0 transition-opacity duration-300 group-hover:opacity-100`} />
                 <div className="relative flex h-full flex-col gap-5">
                   <div>
-                    <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-primary">
+                    <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
                       {chapter.country}
                     </span>
                     <h2 className="mt-4 text-2xl font-semibold text-foreground">{chapter.name}</h2>
@@ -130,18 +130,18 @@ export default function Chapters() {
                   </div>
                   <div className="mt-auto space-y-3 rounded-2xl border border-border/60 bg-background/70 p-4 text-xs text-muted-foreground">
                     <div className="flex items-center gap-2 text-sm text-foreground">
-                      <Users size={16} className="text-primary" />
+                          <Users size={16} className="text-primary" />
                       {chapter.members}
-                    </div>
+                        </div>
                     <p>{chapter.cadence}</p>
-                  </div>
+                        </div>
                   <div className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-smooth group-hover:text-primary/80">
                     Visit chapter profile
                     <Compass size={16} />
+                    </div>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
           </div>
         </section>
 
@@ -149,7 +149,7 @@ export default function Chapters() {
           <div className="rounded-3xl border border-border/60 bg-surface p-10 shadow-[0_35px_80px_-40px_rgba(7,8,45,0.55)] backdrop-blur-xl">
             <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary">
+            <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
                   Start Here
                 </div>
                 <h2 className="mt-4 text-3xl font-semibold text-foreground sm:text-4xl">
