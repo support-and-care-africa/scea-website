@@ -27,19 +27,25 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
+        rel: "icon",
+        url: "/icon.svg",
+        type: "image/svg+xml",
+      },
+      {
         url: "/icon-light-32x32.png",
         media: "(prefers-color-scheme: light)",
+        type: "image/png",
+        sizes: "32x32",
       },
       {
         url: "/icon-dark-32x32.png",
         media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        type: "image/png",
+        sizes: "32x32",
       },
     ],
     apple: "/apple-icon.png",
+    shortcut: "/icon.svg",
   },
 }
 

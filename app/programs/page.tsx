@@ -114,7 +114,7 @@ export default function Programs() {
           <div className="absolute inset-0 -z-10 bg-gradient-to-br from-secondary via-secondary/90 to-background" />
           <div className="absolute inset-0 -z-10 opacity-30 mix-blend-overlay" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"420\" height=\"420\" viewBox=\"0 0 420 420\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 210H420\" stroke=\"rgba(255,255,255,0.08)\"/%3E%3Cpath d=\"M210 0V420\" stroke=\"rgba(255,255,255,0.06)\"/%3E%3C/svg%3E')" }} />
           <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 pb-24 pt-20 text-secondary-foreground lg:px-8 lg:pb-32">
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.35em] text-primary dark:text-primary-foreground">
+            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.35em] text-primary dark:text-primary">
               Programs & Pathways
             </div>
             <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:items-end">
@@ -152,7 +152,7 @@ export default function Programs() {
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+                <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
                   Core Streams
                 </div>
                 <h2 className="mt-4 text-3xl font-semibold text-foreground sm:text-4xl">
@@ -174,7 +174,7 @@ export default function Programs() {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-accent/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   <div className="relative flex h-full flex-col gap-6">
                     <div className="flex items-center justify-between">
-                      <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+                      <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
                         {program.badge}
                       </span>
                       <span className="grid h-12 w-12 place-items-center rounded-2xl bg-primary/10 text-primary">
@@ -207,7 +207,7 @@ export default function Programs() {
         <section className="mx-auto w-full max-w-6xl px-4 lg:px-8">
           <div className="grid gap-10 rounded-3xl border border-border/60 bg-surface p-10 shadow-[0_35px_80px_-40px_rgba(7,8,45,0.55)] backdrop-blur-xl lg:grid-cols-[1.2fr_1fr]">
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+              <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
                 Residencies & Labs
               </div>
               <h2 className="text-3xl font-semibold text-foreground sm:text-4xl">
@@ -223,7 +223,7 @@ export default function Programs() {
                   <div key={residency.title} className="rounded-3xl border border-border/60 bg-background/80 p-6 transition-smooth hover:-translate-y-1 hover:border-primary/40">
                     <div className="flex items-center justify-between gap-4">
                       <h3 className="text-lg font-semibold text-foreground">{residency.title}</h3>
-                      <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+                      <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
                         {residency.location}
                       </span>
                     </div>
@@ -234,7 +234,7 @@ export default function Programs() {
             </div>
 
             <div className="flex flex-col gap-6 rounded-3xl border border-border/60 bg-background/80 p-8 shadow-lg transition-smooth hover:border-primary/40">
-              <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+              <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
                 Care in Practice
               </div>
               <p className="text-sm text-muted-foreground">
@@ -266,7 +266,7 @@ export default function Programs() {
           <div className="rounded-3xl border border-border/60 bg-surface p-10 shadow-[0_35px_80px_-40px_rgba(7,8,45,0.55)] backdrop-blur-xl">
             <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
               <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+              <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
                   Support Desk
                 </div>
                 <h2 className="mt-4 text-3xl font-semibold text-foreground sm:text-4xl">
@@ -294,7 +294,7 @@ export default function Programs() {
           <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-secondary/40 to-secondary" />
           <div className="absolute inset-x-0 top-0 -z-10 h-48 bg-[radial-gradient(circle_at_top,rgba(93,186,159,0.35),transparent_65%)]" />
           <div className="mx-auto w-full max-w-4xl px-4 py-24 text-center text-secondary-foreground lg:px-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+            <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
               Join a program
             </div>
             <h2 className="mt-6 text-3xl font-semibold text-foreground dark:text-white sm:text-4xl">

@@ -92,7 +92,7 @@ export default function Blog() {
           <div className="absolute inset-0 -z-10 bg-gradient-to-br from-secondary via-secondary/90 to-background" />
           <div className="absolute inset-0 -z-10 opacity-30 mix-blend-overlay" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"420\" height=\"420\" viewBox=\"0 0 420 420\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 420L420 0\" stroke=\"rgba(255,255,255,0.06)\"/%3E%3C/svg%3E')" }} />
           <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 pb-24 pt-20 text-secondary-foreground lg:px-8 lg:pb-32">
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
               Stories & Signals
             </div>
             <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-end">
@@ -131,18 +131,18 @@ export default function Blog() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-accent/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               <div className="relative flex h-full flex-col gap-6">
                 <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.3em] text-primary">
-                  <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+                  <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
                     {featured.category}
-                  </span>
+                        </span>
                   <span className="inline-flex items-center gap-2 text-muted-foreground dark:text-white/60">
-                    <Calendar size={14} />
+                          <Calendar size={14} />
                     {new Date(featured.date).toLocaleDateString()}
-                  </span>
-                </div>
+                        </span>
+                      </div>
                 <div className="space-y-3">
                   <h2 className="text-3xl font-semibold text-foreground sm:text-4xl">{featured.title}</h2>
                   <p className="text-sm text-muted-foreground sm:text-base">{featured.excerpt}</p>
-                </div>
+                    </div>
                 <div className="mt-auto flex items-center gap-3 text-sm font-semibold text-primary transition-smooth group-hover:text-primary/80">
                   Read full story
                   <span className="text-lg">→</span>
@@ -181,7 +181,7 @@ export default function Blog() {
         <section className="mx-auto w-full max-w-6xl px-4 lg:px-8">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+                <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
                 Field Notes
               </div>
               <h2 className="mt-4 text-3xl font-semibold text-foreground sm:text-4xl">Latest stories</h2>
@@ -201,34 +201,34 @@ export default function Blog() {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-accent/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                 <div className="relative flex h-full flex-col gap-5">
                   <div className="flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-primary/80">
-                    <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[10px] font-semibold text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
-                      {post.category}
-                    </span>
+                    <span className="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[10px] font-semibold text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
+                          {post.category}
+                        </span>
                     <span className="inline-flex items-center gap-2 text-muted-foreground">
-                      <Calendar size={14} />
-                      {new Date(post.date).toLocaleDateString()}
+                          <Calendar size={14} />
+                          {new Date(post.date).toLocaleDateString()}
                     </span>
-                  </div>
+                        </div>
                   <h3 className="text-lg font-semibold text-foreground">{post.title}</h3>
                   <p className="text-sm text-muted-foreground">{post.excerpt}</p>
                   <div className="mt-auto flex items-center justify-between border-t border-border/60 pt-4 text-xs text-muted-foreground">
                     <span className="inline-flex items-center gap-2">
-                      <User size={14} />
-                      {post.author}
+                          <User size={14} />
+                          {post.author}
                     </span>
                     <span className="text-sm font-semibold text-primary transition-smooth group-hover:text-primary/80">
                       Read →
                     </span>
                   </div>
-                </div>
-              </Link>
-            ))}
+                  </div>
+                </Link>
+              ))}
           </div>
         </section>
 
         <section className="mx-auto w-full max-w-5xl px-4 lg:px-8">
           <div className="rounded-3xl border border-border/60 bg-surface p-10 text-center shadow-[0_35px_80px_-40px_rgba(7,8,45,0.55)] backdrop-blur-xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+            <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
               Newsletter
             </div>
             <h2 className="mt-6 text-3xl font-semibold text-foreground sm:text-4xl">Stay close to the movement.</h2>

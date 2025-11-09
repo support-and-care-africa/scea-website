@@ -35,7 +35,7 @@ export function Footer() {
           <div className="rounded-3xl border border-border/40 bg-surface-strong p-8 text-foreground shadow-soft backdrop-blur-xl dark:border-border/60 dark:bg-background/95 dark:text-secondary-foreground sm:p-12">
             <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
               <div className="max-w-xl space-y-3">
-                <span className="inline-flex items-center rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:text-primary-foreground">
+                <span className="inline-flex items-center rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:text-primary">
                   Stay in the Loop
                 </span>
                 <h2 className="text-2xl font-semibold md:text-3xl">
@@ -67,11 +67,11 @@ export function Footer() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/25 via-primary/30 to-accent/25">
                   <Image src="/logo.png" alt="Support & Care For East Africa" width={28} height={28} className="h-7 w-7" />
                 </div>
-                <div>
+          <div>
                   <span className="block text-xs uppercase tracking-[0.3em] text-muted-foreground">Support & Care</span>
                   <span className="text-sm font-semibold text-foreground">For East Africa</span>
                 </div>
-              </Link>
+                </Link>
               <p className="text-sm text-muted-foreground">
                 We nurture resilient open source communities across East Africa through mentorship, funding, and global
                 collaboration.
@@ -91,13 +91,13 @@ export function Footer() {
                         →
                       </span>
                       {link.label}
-                    </Link>
-                  </li>
+                </Link>
+              </li>
                 ))}
-              </ul>
-            </div>
+            </ul>
+          </div>
 
-            <div>
+          <div>
               <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Chapters</h3>
               <ul className="mt-4 space-y-2 text-sm">
                 {chapters.map((chapter) => (
@@ -108,11 +108,11 @@ export function Footer() {
                     >
                       <span className="h-1.5 w-1.5 rounded-full bg-primary/60 transition-smooth group-hover:bg-primary"></span>
                       {chapter.label}
-                    </Link>
-                  </li>
+                </Link>
+              </li>
                 ))}
-              </ul>
-            </div>
+            </ul>
+          </div>
 
             <div className="space-y-4">
               <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Connect</h3>

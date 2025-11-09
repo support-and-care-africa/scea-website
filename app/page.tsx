@@ -120,7 +120,7 @@ export default function Home() {
           <div className="mx-auto flex max-w-6xl flex-col gap-16 px-4 pb-24 pt-12 text-secondary-foreground lg:px-8 lg:pb-32 lg:pt-20">
             <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr] lg:items-center">
               <div className="space-y-8 text-foreground dark:text-white">
-                <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+                <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
                   Nurturing Open Source Souls
           </div>
                 <h1 className="text-balance text-4xl font-semibold leading-tight text-foreground dark:text-white sm:text-5xl md:text-6xl">
@@ -221,7 +221,7 @@ export default function Home() {
         <section className="mx-auto w-full max-w-6xl px-4 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-[1fr_1.5fr]">
             <div className="rounded-3xl border border-border/60 bg-card/70 p-10 shadow-[0_25px_60px_-30px_rgba(7,8,45,0.35)] backdrop-blur-xl">
-              <div className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-transparent px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/30 dark:bg-primary/10 dark:text-primary-foreground">
+              <div className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-transparent px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/30 dark:bg-primary/10 dark:text-primary">
                 Impact Signals
               </div>
               <h2 className="mt-6 text-3xl font-semibold text-foreground sm:text-4xl">
@@ -269,7 +269,7 @@ export default function Home() {
           <div className="flex flex-col gap-12">
             <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:justify-between">
                   <div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+                <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
                   Programs
                 </div>
                 <h2 className="mt-4 text-3xl font-semibold text-foreground sm:text-4xl">Our focus areas</h2>
@@ -296,7 +296,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/5 to-accent/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   <div className="relative space-y-6">
                     <div className="flex items-center justify-between">
-                      <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+                      <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
                         {badge}
                       </div>
                       <span className="grid h-12 w-12 place-items-center rounded-2xl bg-primary/10 text-primary">
@@ -326,7 +326,7 @@ export default function Home() {
           <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 lg:px-8">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+                <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
                   Community Signals
                 </div>
                 <h2 className="mt-4 text-3xl font-semibold text-foreground sm:text-4xl">Stories in motion</h2>
@@ -353,7 +353,7 @@ export default function Home() {
                   >
                     <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" style={{ backgroundImage: "linear-gradient(135deg, rgba(93,186,159,0.15), rgba(157,213,253,0.15))" }} />
                     <div className="relative space-y-6">
-                      <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+                      <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
                         {story.region}
                       </div>
                       <h3 className="text-lg font-semibold text-foreground">{story.title}</h3>
@@ -375,7 +375,7 @@ export default function Home() {
         <section className="mx-auto w-full max-w-6xl px-4 lg:px-8">
           <div className="grid gap-12 rounded-3xl border border-border/60 bg-surface p-10 shadow-[0_35px_80px_-40px_rgba(7,8,45,0.55)] backdrop-blur-xl lg:grid-cols-[1fr_1.4fr]">
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+              <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
                 Collective Roadmap
               </div>
               <h2 className="text-3xl font-semibold text-foreground sm:text-4xl">
@@ -420,7 +420,7 @@ export default function Home() {
           <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-secondary/40 to-secondary" />
           <div className="absolute inset-x-0 top-0 -z-10 h-48 bg-[radial-gradient(circle_at_top,rgba(93,186,159,0.35),transparent_65%)]" />
           <div className="mx-auto w-full max-w-4xl px-4 py-24 text-center text-secondary-foreground lg:px-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary-foreground">
+            <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
               Final Call
             </div>
             <h2 className="mt-6 text-3xl font-semibold text-foreground dark:text-white sm:text-4xl">Ready to co-create lasting change?</h2>
