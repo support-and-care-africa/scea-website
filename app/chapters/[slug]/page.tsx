@@ -152,7 +152,7 @@ export default async function ChapterDetail({ params }: { params: Promise<{ slug
 
       <main className="flex-1 space-y-24 pb-24 sm:space-y-32 sm:pb-32">
         <section className="relative overflow-hidden">
-          <div className="absolute inset-0 -z-10 bg-gradient-to-br from-secondary via-secondary/90 to-background" />
+          <div className="absolute inset-0 -z-10 bg-linear-to-br from-secondary via-secondary/90 to-background" />
           <div className="absolute inset-0 -z-10 opacity-30 mix-blend-overlay" style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"420\" height=\"420\" viewBox=\"0 0 420 420\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 420L420 0\" stroke=\"rgba(255,255,255,0.06)\"/%3E%3C/svg%3E')" }} />
           <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 pb-24 pt-20 text-secondary-foreground lg:px-8 lg:pb-32">
             <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/50 bg-transparent px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.35em] text-primary dark:border-primary/40 dark:bg-primary/10 dark:text-primary">
