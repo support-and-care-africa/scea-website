@@ -124,8 +124,9 @@ const chaptersData: Record<
   },
 }
 
-export default function ChapterDetail({ params }: { params: { slug: ChapterKey } }) {
-  const chapter = chaptersData[params.slug]
+export default async function ChapterDetail({ params }: { params: Promise<{ slug: ChapterKey }> }) {
+  const { slug } = await params
+  const chapter = chaptersData[slug]
 
   if (!chapter) {
     return (
