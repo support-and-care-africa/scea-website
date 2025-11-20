@@ -110,7 +110,6 @@ export default function Chapters() {
             </div>
           </div>
         </section>
-
         <section className="mx-auto w-full max-w-6xl px-4 lg:px-8">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {chapters.map((chapter) => (
@@ -161,7 +160,6 @@ export default function Chapters() {
                 </p>
               </div>
             </div>
-
             <div className="mt-10 grid gap-6 sm:grid-cols-3">
               {steps.map((step, index) => (
                 <div key={step.title} className="rounded-3xl border border-border/60 bg-background/80 p-6 transition-smooth hover:-translate-y-1 hover:border-primary/40">
